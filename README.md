@@ -1,6 +1,6 @@
 ## Olá, eu sou Caio Vinicius 👋
 
-### Apaixonado por tecnologia, estudando no momento front-end e I.A.
+### Apaixonado por tecnologia, estudando no momento Front-end e I.A.
 
 ### Meus contatos 📑
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](caiorhcp12@gmail.com)
