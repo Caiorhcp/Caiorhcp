@@ -36,4 +36,4 @@
 
 #### No momento estou apaixonado pelo front-end e iniciante meus estudos em I.A, que ja estou adorando. 
 
-## Obrigado e volte sempre 🚀🚀🚀
+## Obrigado e volte sempre 🚀
