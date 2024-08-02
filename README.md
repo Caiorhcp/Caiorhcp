@@ -1,7 +1,5 @@
 ## Olá, eu sou Caio Vinicius 👋
 
-### Apaixonado por tecnologia, estudando no momento Front-end e I.A.
-
 ### Meus contatos 📑
 📧Gmail: caiorhcp12@gmail.com <br/> <br/>
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/caio-vinicius-710194185/)
@@ -27,13 +25,3 @@
 
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Caiorhcp&layout=compact)
-
-## Sobre
-
-#### Minha trajetoria no mundo da tecnologia é bem recente, antes estava no cursando Ciencias Econômicas, mas durante a pandemia uma velha paixão voltou a tona. Na minha infancia em epoca de escola, tive o primeiro contato com progração em uma atividade no GameMaker, onde pude compreender pela primeira vez a logica de programação basica, desde então tive uma queda pela tecnologia, apesar de ter seguido anos depois um rumo diferente.
-
-#### Na pandemia pude novamente acender essa chama presa em mim quando adentrei novamente no GameMaker e assim mudei minha area de estudos, e em 2023 adentrei em um curso superior na area.
-
-#### No momento estou apaixonado pelo front-end e iniciante meus estudos em I.A, que ja estou adorando. 
-
-## Obrigado e volte sempre 🚀
