@@ -4,7 +4,7 @@
   <a href="https://www.linkedin.com/in/caio-vinicius-710194185/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge"></a>
   <a href="https://portifolio-caiopft.vercel.app/"><img alt="Portfólio" src="https://img.shields.io/badge/Portf%C3%B3lio-111827?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="mailto:caiorhcp12@gmail.com"><img alt="E-mail" src="https://img.shields.io/badge/caiorhcp12%40gmail.com-1f2937?style=for-the-badge&logo=gmail&logoColor=EA4335"></a>
-  <a href="https://www.instagram.com/caiockll/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+  <a href="https://www.instagram.com/caio.goncalves.dev/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 </p>
 
 ## Sobre mim
@@ -42,13 +42,6 @@
 ## Stacks
 
 <img src="assets/linguagens.svg" alt="Gráfico das linguagens mais usadas e usadas recentemente nos meus projetos, calculado pelos meus commits" width="100%">
-
-**Linguagens**<br>
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-1f2328?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B">
-<img alt="Java" src="https://img.shields.io/badge/Java-1f2328?style=for-the-badge&logo=openjdk&logoColor=white">
-<img alt="Dart" src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
 
 **Front-end e mobile**<br>
 <img alt="React" src="https://img.shields.io/badge/React-1f2328?style=for-the-badge&logo=react&logoColor=61DAFB">
