@@ -54,6 +54,9 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_limit: 10
           plugin_languages_threshold: 1%
+          # HTML inflava o volume (páginas geradas/exportadas: 58%); C/C++, CMake, Swift e Objective-C são
+          # o código que o Flutter gera para cada plataforma, não código escrito por mim
+          plugin_languages_ignored: html, c++, c, cmake, swift, objective-c
           committer_message: "chore: atualizar gráfico de linguagens"
 
       - uses: actions/checkout@v7
