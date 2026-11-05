@@ -1,5 +1,5 @@
 # Gera os gráficos do perfil no próprio repositório (sem depender de serviços externos que caem).
-# Requer o segredo METRICS_TOKEN: token clássico com escopos repo e read:user, para contar repositórios privados.
+# Requer o segredo PERFIL: token clássico com escopos repo e read:user, para contar repositórios privados.
 name: Atualizar perfil
 
 on:
@@ -23,9 +23,9 @@ jobs:
     steps:
       - name: Métricas (contribuições e calendário)
         uses: lowlighter/metrics@v3.34
-        continue-on-error: true # sem o METRICS_TOKEN esta etapa falha, mas a cobrinha ainda é gerada
+        continue-on-error: true # sem o segredo PERFIL esta etapa falha, mas a cobrinha ainda é gerada
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.PERFIL }}
           user: Caiorhcp
           filename: assets/metricas.svg
           template: classic
@@ -42,7 +42,7 @@ jobs:
         uses: lowlighter/metrics@v3.34
         continue-on-error: true
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.PERFIL }}
           user: Caiorhcp
           filename: assets/linguagens.svg
           template: classic
