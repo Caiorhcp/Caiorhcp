@@ -41,6 +41,8 @@
 
 ## Stacks
 
+<img src="assets/linguagens.svg" alt="Gráfico das linguagens mais usadas e usadas recentemente nos meus projetos, calculado pelos meus commits" width="100%">
+
 **Linguagens**<br>
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
 <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-1f2328?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
@@ -77,7 +79,7 @@
 
 ## Estatísticas
 
-<img src="assets/metricas.svg" alt="Métricas do GitHub: contribuições, linguagens mais usadas e calendário do último ano" width="100%">
+<img src="assets/metricas.svg" alt="Métricas do GitHub: contribuições, atividade e calendário do último ano" width="100%">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cobrinha-escura.svg">

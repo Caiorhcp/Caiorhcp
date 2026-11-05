@@ -21,7 +21,7 @@ jobs:
   graficos:
     runs-on: ubuntu-latest
     steps:
-      - name: Métricas (contribuições, linguagens, calendário)
+      - name: Métricas (contribuições e calendário)
         uses: lowlighter/metrics@v3.34
         continue-on-error: true # sem o METRICS_TOKEN esta etapa falha, mas a cobrinha ainda é gerada
         with:
@@ -34,11 +34,29 @@ jobs:
           config_display: large
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          committer_message: "chore: atualizar métricas do perfil"
+
+      # Linguagens pelos próprios commits (modo indepth), não pelo tamanho dos repositórios:
+      # mede o que eu escrevo de fato, inclusive nos repositórios privados.
+      - name: Linguagens mais usadas
+        uses: lowlighter/metrics@v3.34
+        continue-on-error: true
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Caiorhcp
+          filename: assets/linguagens.svg
+          template: classic
+          base: ""
+          config_timezone: America/Fortaleza
+          config_display: large
           plugin_languages: yes
-          plugin_languages_sections: most-used
+          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
-          committer_message: "chore: atualizar métricas do perfil"
+          plugin_languages_threshold: 2%
+          plugin_languages_other: yes
+          committer_message: "chore: atualizar gráfico de linguagens"
 
       - uses: actions/checkout@v7
 
