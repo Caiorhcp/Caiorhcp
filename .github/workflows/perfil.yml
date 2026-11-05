@@ -1,0 +1,59 @@
+# Gera os gráficos do perfil no próprio repositório (sem depender de serviços externos que caem).
+# Requer o segredo METRICS_TOKEN: token clássico com escopos repo e read:user, para contar repositórios privados.
+name: Atualizar perfil
+
+on:
+  schedule:
+    - cron: "17 9 * * *" # todo dia, 06:17 em Fortaleza
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/perfil.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: perfil
+  cancel-in-progress: true
+
+jobs:
+  graficos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Métricas (contribuições, linguagens, calendário)
+        uses: lowlighter/metrics@v3.34
+        continue-on-error: true # sem o METRICS_TOKEN esta etapa falha, mas a cobrinha ainda é gerada
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Caiorhcp
+          filename: assets/metricas.svg
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: America/Fortaleza
+          config_display: large
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          committer_message: "chore: atualizar métricas do perfil"
+
+      - uses: actions/checkout@v7
+
+      - name: Cobrinha das contribuições
+        uses: Platane/snk@v3.5.0
+        with:
+          github_user_name: Caiorhcp
+          outputs: |
+            assets/cobrinha-escura.svg?palette=github-dark&color_snake=#6fb3b3
+            assets/cobrinha-clara.svg?palette=github-light&color_snake=#1f5f63
+
+      - name: Salvar a cobrinha
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --quiet
+          git add assets/cobrinha-*.svg
+          git diff --cached --quiet || (git commit -m "chore: atualizar cobrinha das contribuições" && git push)
