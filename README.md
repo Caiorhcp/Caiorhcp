@@ -41,7 +41,7 @@
 
 ## Stacks
 
-<img src="assets/linguagens.svg" alt="Gráfico das linguagens mais usadas e usadas recentemente nos meus projetos, calculado pelos meus commits" width="100%">
+<img src="assets/linguagens.svg" alt="Gráfico das linguagens mais usadas nos meus projetos, incluindo os privados" width="100%">
 
 **Front-end e mobile**<br>
 <img alt="React" src="https://img.shields.io/badge/React-1f2328?style=for-the-badge&logo=react&logoColor=61DAFB">

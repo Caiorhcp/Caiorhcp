@@ -36,8 +36,8 @@ jobs:
           plugin_isocalendar_duration: full-year
           committer_message: "chore: atualizar métricas do perfil"
 
-      # Linguagens pelos próprios commits (modo indepth), não pelo tamanho dos repositórios:
-      # mede o que eu escrevo de fato, inclusive nos repositórios privados.
+      # Linguagens pelo volume de código em todos os repositórios, inclusive os privados (o token permite ler).
+      # O modo indepth (por commit) estourou o tempo máximo com 47 repositórios e gerou resultado parcial.
       - name: Linguagens mais usadas
         uses: lowlighter/metrics@v3.34
         continue-on-error: true
@@ -50,12 +50,10 @@ jobs:
           config_timezone: America/Fortaleza
           config_display: large
           plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_sections: most-used, recently-used
+          plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_limit: 8
-          plugin_languages_threshold: 2%
-          plugin_languages_other: yes
+          plugin_languages_limit: 10
+          plugin_languages_threshold: 1%
           committer_message: "chore: atualizar gráfico de linguagens"
 
       - uses: actions/checkout@v7
