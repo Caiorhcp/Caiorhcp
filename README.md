@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://www.linkedin.com/in/caio-vinicius-710194185/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge"></a>
-  <a href="https://portifolio-caiopft.vercel.app/"><img alt="Portfólio" src="https://img.shields.io/badge/Portf%C3%B3lio-111827?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://caio-goncalves.vercel.app/"><img alt="Portfólio" src="https://img.shields.io/badge/Portf%C3%B3lio-111827?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="mailto:caiorhcp12@gmail.com"><img alt="E-mail" src="https://img.shields.io/badge/caiorhcp12%40gmail.com-1f2937?style=for-the-badge&logo=gmail&logoColor=EA4335"></a>
   <a href="https://www.instagram.com/caio.goncalves.dev/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 </p>
